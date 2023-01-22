@@ -66,12 +66,10 @@
 		}
 	</style>
 	<body>
-		<audio id="music" style="display: none" class="musicControl" autoplay="autoplay" loop="loop" preload="auto"
-			controls="controls" src="./lib/music.mp3"></audio>
-		<img id="music-image" style="position: fixed;z-index: 999;height:30px;right: 20px;top: 20px;" src="./lib/cc.jpg"
-			alt="" />
+		
 	</body>
 	<script src='./lib/gameCanvas-4.0.js'></script>
 	<script src="./lib/script.js"></script>
-	<script> document.getElementById('music').play(); </script>
+	<script>const music = new Audio('./lib/music.mp3');
+music.play();</script>
 </html>
